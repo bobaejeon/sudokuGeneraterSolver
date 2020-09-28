@@ -1,25 +1,29 @@
 # Sudoku Generater
 Hello world! This is a simple sudoku generater and solver in python.
 
-### How to generate?
+### How to generate a game?
   1. Get a fully solved board
-  *It will be erasing numbers according to the difficulty user have set*
+ >> <br>*It will be on a loop of erasing numbers according to the difficulty user have set*<br>
   2. Erase one cell at a time(by randomly chosen row and column)
   3. See if it still has a solution
     3-1. If so, goto step 2 and repeat
     3-2. If not, make the cell filled again and goto step 2 and repeat
   4. Print out the game board, it's time to play!
   
-### How to solve?
+### How to solve it?
   I used backtracking algorithm with recursive function. 
   If there's a "blank", it will test with numbers from 1 to 9 to see which number fits the sudoku rule. 
 
-#### Do you want to see how I suffered?
+<details markdown="1">
+<summary>Do you want to see how I suffered?</summary>
+
   My first approach to generate a sudoku puzzle was to put random numbers in randomly chosen rows and columns.
-  예를 들어 한 30칸만 채운다면, 채운 데는 다 규칙에 맞았어도 결국 답이 없을 수 있다.
+  So basically I tried put some numbers instead of a full grid.
+  
+  Even if the numbers you fill in fit the rules, it may be a game with no correct answer at all.
+  (Well it seems more normal to have no correct answer)
  
-  This approach took so much time on creating random numbers.
-  And even I checked the number was possible by then, 
+  Also this approach took so much time on creating random numbers.
 ```````
 # (wrong)generate a problem
 def generate():  
@@ -35,22 +39,8 @@ def generate():
             grid[y][x] = num
             level -= 1
         
-      ay = np.array(5)
-      for y in range(5):
-            while True:
-                  num = np.random.randint(0, 10)
-                  ay[y] = num
-                  for i in range(1, y+1): 
-                        
-
-            for x in range(9):
-                  while True:
-                      num = np.random.randint(0, 10)
-                      if possible(y, x, num):
-                            print(y,", ",x,", ",num, ", ",possible(y, x, num))
-                            grid[y][x] = num
-                            break
-      print(grid)
-     
+      ...and so on
 ``````
+</details>
+  
 ### Screenshot
