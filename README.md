@@ -1,2 +1,2 @@
-# sudokuGeneraterSolver
-Sudoku generater and solver in python
+# Sudoku Generater
+Sudoku generater and solver in python.
