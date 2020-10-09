@@ -12,15 +12,15 @@ Hello world! This is a simple sudoku generater and solver in python.
   
 ### How to solve it?
   I used backtracking algorithm with recursive function. <br>
-  If there's a "blank", it will test with numbers from 1 to 9 to see which number fits the sudoku rule. <br>
+  If there's a "blank", it will test the cell with numbers from 1 to 9 to see which number fits in the rule. <br>
 
 <details markdown="1">
 <summary>Do you want to see how I suffered?</summary>
 
-  My first approach to generate a sudoku puzzle was to put random numbers in randomly chosen rows and columns.<br>
-  So basically I tried put some numbers instead of a full grid.<br>
+  My first approach to generate a sudoku puzzle was to put random numbers in randomly chosen rows and columns.<br><br>
+  So basically I tried put some numbers in an empty board,<br> instead of making a full solved grid and deleting one number at a time.<br>
   <br>
-  Even if the numbers you fill in fit the rules, it may be a game with no correct answer at all.<br>
+  Even if the numbers you fill in fit the rules, it may be a game with no answer at all.<br>
   (Well it seems more normal to have no correct answer)<br>
  <br>
   Also this approach took so much time on creating random numbers.<br>
