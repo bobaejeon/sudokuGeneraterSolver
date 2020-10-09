@@ -5,7 +5,7 @@ Hello world! This is a simple sudoku generater and solver in python.
   1. Get a fully solved board
  > *It will be on a loop of erasing numbers according to the difficulty user have set*
   2. Erase one cell at a time(by randomly chosen row and column)
-  3. See if it still has a solution
+  3. See if it still has a solution<br>
     3-1. If so, goto step 2 and repeat<br>
     3-2. If not, make the cell filled again and goto step 2 and repeat
   4. Print out the game board, it's time to play!
