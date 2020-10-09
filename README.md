@@ -14,6 +14,9 @@ Hello world! This is a simple sudoku generater and solver in python.
   I used backtracking algorithm with recursive function. <br>
   If there's a "blank", it will test the cell with numbers from 1 to 9 to see which number fits in the rule. <br>
 
+### Screenshots
+![image](https://user-images.githubusercontent.com/67196344/95552377-96916980-0a47-11eb-81a3-5c794ea38f5e.png)
+![image](https://user-images.githubusercontent.com/67196344/95552416-a4df8580-0a47-11eb-9d62-6d2a0bf9a471.png)
 <details markdown="1">
 <summary>Do you want to see how I suffered?</summary>
 
